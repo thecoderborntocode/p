@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIJJISVEGGIS</title>
+    <link rel = "stylesheet" href="INDEX.CSS">
+</head>
+
+<body>
+   <div id = "navbar">
+    <a id = "logo"> VIJJISVEGGIS.COM</a>
+    <a  id ="n"> CONTACT US</a>
+    <footer>
+        <!-- <button id = "button1" onclick="dissap()">clickhere</button> -->
+        <!-- <button id = "db" onclick="dynamicmove()">dynamicbutton</button> -->
+
+    </footer>
+   
+   </div>   
+   <!-- <script>
+    function dissap(){
+        let v = document.getElementById('logo');
+        // let b = document.getElementById('button1');
+        if(v.style.display !='none'){
+        v.style.display='none';
+        b.style.backgroundColor = "black";
+        }
+        else{
+            v.style.display='block';
+            b.style.backgroundColor = "purple";
+
+        }
+    
+       
+    
+    }
+   </script> -->
+   
+    
+
+   <div id = "new">
+    <h2 style="color: brown;">WELCOME TO VIJJISVEGGIS</h2>
+    <h2 id = "entername"></h2>
+
+   </div>
+   <div id="div1">
+    <input placeholder="ENTER YOUR NAME" id = "inp">
+    <input type="number" id = "num1" placeholder="enter num1">
+    <input type="number" id = "num2" placeholder="enter num2">
+    <h1 id = "h1">hi</h1>
+    <button onclick="out()" id = "db1">SUBMIT</button>
+    <button onclick="addn1()" id = "numb1">done</button>
+   </div>
+   <script>
+    function out(){
+       
+        
+        // o.innerHTML = '<h1 style = "color:red"> welcome<h1/>';
+        let q1 = document.getElementById('inp');
+        
+        let inpval = q1.value;
+        let o = document.getElementById('new');
+        if(inpval){
+            let res = '<h1 style = "color:red"> HI</h1>'+'<H1 style = "color:green">'+inpval+'</H1>';
+            o.innerHTML =res;
+        }
+        else{
+            alert("Please enter a name");
+            let en = document.getElementById('entername');
+            en.innerHTML ='<p style = "color:red"> please enter your name </p>';
+        }
+
+    }
+   </script>
+   <script>
+   function addn1()
+   {
+    let num1 = document.getElementById("num1");
+    let val1 = parseInt(num1.value);
+    let num2 = document.getElementById("num2");
+    let val2 = parseInt(num2.value);
+    var res = val1+val2;
+    let disp = document.getElementById("h1");
+    disp.innerHTML='<span style = "color:red">'+res+'</span>';
+
+   }
+
+   </script>
+    
+</body>
+</html>
